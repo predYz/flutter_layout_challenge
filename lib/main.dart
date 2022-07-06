@@ -12,28 +12,42 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.teal,
             body: SafeArea(
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    height: double.infinity,
-                    width: 50.0,
-                    color: Colors.red,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 100.0,
+                        color: Colors.red,
+                      ),
+                    ],
                   ),
-                  Container(
-                    height: 50.0,
-                    width: 50.0,
-                    color: Colors.yellow,
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 100.0,
+                        width: 100.0,
+                        color: Colors.yellow,
+                      ),
+                      Container(
+                        height: 100.0,
+                        width: 100.0,
+                        color: Colors.green[500],
+                      ),
+                    ],
                   ),
-                  Container(
-                    height: 50.0,
-                    width: 50.0,
-                    color: Colors.limeAccent,
-                  ),
-                  Container(
-                    height: 50.0,
-                    width: 50.0,
-                    color: Colors.blue,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 100.0,
+                        color: Colors.blue,
+                      ),
+                    ],
                   ),
                 ],
               ),
